@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Chakra+Petch&family=Montserrat:wght@300;700&family=Open+Sans&family=Pacifico&family=Pinyon+Script&family=Rajdhani:wght@500&family=Raleway:wght@200&family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ========== CUSTOM CSS ========== */
+#main {
+  width: 100%;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* ========== CUSTOM CSS ========== */
+#home {
+  height: 100vh;
+  width: 100%;
+}
+/* ========== HEADER ========== */
+/* ========== HEADER ========== */
+header {
+  padding: 2vw;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(50px);
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav ul {
+  display: flex;
+  gap: 1rem;
+}
+#nav a {
+  color: #000;
+}
+#logo a {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+#nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* ========== HERO ========== */
+/* ========== HERO ========== */
+#hero {
+  padding: 0 20vw;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#profile-detls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.title {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profile-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.my-image {
+  width: 50%;
+  height: 100%;
+}
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: block;
+}
+
+.title h1 {
+  display: flex;
+  font-size: 33px;
+}
+.title p {
+  letter-spacing: -0.1px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.emoji {
+  rotate: 15deg;
+}
+
+.media i {
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+#tech-stack {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#tech-stack p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.tech-lists {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.tech-lists img {
+  width: 22px;
+  height: 25px;
+  object-fit: cover;
+}
+/* ========== ABOUT ========== */
+/* ========== ABOUT ========== */
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-container {
+  display: flex;
+  align-items: center;
+}
+#about-detls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+#about-image,
+#about-detls {
+  width: 350px;
+  height: 320px;
+  padding: 1rem;
+}
+#about-detls h5 {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: rgb(81, 81, 249);
+}
+#about-detls p {
+  font-size: 15px;
+  text-align: start;
+}
+
+/* ========== PROJECTS ========== */
+/* ========== PROJECTS ========== */
+#projects {
+  height: 100vh;
+  width: 100%;
+  padding: 2vw 10vw;
+}
+#projects h5{
+  color: rgb(120, 120, 247);
+}
+
+#projects h3 {
+  line-height: 2;
+}
+/* ========== HEADER ========== */
+/* ========== HEADER ========== */
+
+/* ========== MEDIA QURIES ========== */
+/* ========== MEDIA QURIES ========== */
