@@ -311,35 +311,28 @@ const scroll = new LocomotiveScroll({
 // ROUND TEXT CIRCLE
 {
   const circleText = document.querySelector("#circleText");
-  // circleText.innerHTML = circleText.te
-  // .split("")
-  // .map(
-  //   (char, i) => `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-  // )
-  // .join("");
-  // PROJECTS SHERY JS
-  // ScrollTrigger.create({
-  // 	trigger:".fimages",
-  // 	start:"top top",
-  // 	end:"bottom bottom",
-  // 	pin:"#flemem"
-  // })
+  circleText.innerHTML = circleText.innerText.split("").map((char, i) => 
+  `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+  )
+  .join("");
+
+
 }
 
 // PROJEXTS SCROLL TRIGGER
 {
-  // gsap.to("#flemem", {
-  //   scrollTigger: {
-  //     trigger: ".fimages",
-  //     pin: true,
-  //     start: "top top",
-  //     end: "bottom bottom",
-  //     endTrigger: ".last",
-  //     scrub: 1,
-  //   },
-  //   y: "-300%",
-  //   ease: Power1,
-  // });
+  gsap.to("#flemem", {
+    scrollTigger: {
+      trigger: "#fimages",
+      pin: true,
+      start: "top top",
+      end: "bottom bottom",
+      endTrigger: ".last",
+      scrub: 1,
+    },
+    y: "-300%",
+    ease: Power1,
+  });
   // Shery.imageEffect("", {
   //   style: 5,
   //   slideStyle: (setScroll) => {
