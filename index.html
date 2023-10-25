@@ -19,34 +19,84 @@
     <!--! ==== CSS LINKS ==== -->
   </head>
   <body>
+    <!-- ===== HAMBURGER MENU =========== -->
+
     <div id="main">
       <!--! ===== HEADER ==== -->
-      <header>
-        <div id="nav">
-          <div id="logo">
-            <a class="navLink" href="/">Uttam.dev</a>
-          </div>
-          <div id="navlist">
-            <ul>
-              <li class="navLink"><a href="/">Menu</a></li>
-              <li class="navLink magnet" id="hambur">
-                <div class="hamIcon"></div>
-                <div class="hamIcon"></div>
-              </li>
-            </ul>
+      <div class="menu-container">
+        <div class="logo">
+          <h1>
+            Uttam <br />
+            Patra
+          </h1>
+        </div>
+        <div class="menu-close-section">
+          <div class="inner-menu-close">
+            <span>
+              <h1 onclick="menuclose()">CLOSE</h1>
+            </span>
+            <div class="circle-hover">
+              <div class="inner-circle-hover"></div>
+            </div>
           </div>
         </div>
-      </header>
+        <div class="menu-items-section">
+          <div class="menu-about-section menu-item-section">
+            <div class="inner-menu-item">
+              <h1>ABOUT</h1>
+              <div class="circle-hover">
+                <div class="inner-circle-hover"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-blogs-section menu-item-section">
+            <div class="inner-menu-item">
+              <h1>BLOGS</h1>
+              <div class="circle-hover">
+                <div class="inner-circle-hover"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-contact-section menu-item-section">
+            <div class="inner-menu-item">
+              <h1>CONTACT US</h1>
+              <div class="circle-hover">
+                <div class="inner-circle-hover"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main section  -->
+      <div class="section">
+        <header>
+          <h2>uttam.dev</h2>
+          <div class="navLink magnet" id="hambur">
+            <h1 onclick="menuopen()">Menu</h1>
+          </div>
+        </header>
+      </div>
       <!--! ===== HERO ==== -->
       <div id="heroCont">
-        <h1 class="mainTitle">I develop</h1>
-        <h1 class="mainTitle">
-          <video class="magnet" loop muted autoplay src="./image/1.mp4"></video
-          >digital products
-        </h1>
-        <h1 class="mainTitle">from scratch</h1>
-        <div id="profileImage">
-          <img class="profileImage" src="./image/uttam.png" alt="" srcset="" />
+        <div class="">
+          <h1 class="mainTitle">I develop</h1>
+          <h1 class="mainTitle">
+            <video
+              class="magnet"
+              loop
+              muted
+              autoplay
+              src="./image/1.mp4"
+            ></video
+            >digital products
+          </h1>
+          <h1 class="mainTitle">from scratch</h1>
+        </div>
+
+        <div id="circle">
+          <div class="texty">
+            <p id="circleText">Uttam Patra - Creative - FrontEnd Engineer</p>
+          </div>
         </div>
       </div>
       <!-- <div id="hero">
@@ -207,23 +257,192 @@
           </div>
         </div>
       </div>
-      <!--! ===== PROJECTS ==== -->
-      <!-- <div id="projects">
-        <h5>PORTFOLIO</h5>
-        <h2>
-          Each project is a unique piece of development
-          <span id="emoji">🧩</span>
-        </h2>
-      </div> -->
 
-      <!--! ===== TEXT ANIMITION ==== -->
-      <div id="text-aimition">
-        <section class="container">
-          <p class="textClass">The pixel perfect artisan 💡 think - create*</p>
-        </section>
+      <!--! ======= TEXT MARQUE ANIMITION ===== -->
+      <div id="marqueAnimition">
+        <div id="marqueinner">
+          <div id="text-part">
+            <h1>
+              <div id="highfen"></div>
+              Projects
+            </h1>
+            <video
+              class="magnet"
+              muted
+              loop
+              autoplay
+              src="./image/re.mp4"
+            ></video>
+          </div>
+          <div id="text-part">
+            <h1>
+              <div id="highfen"></div>
+              Projects
+            </h1>
+            <video
+              class="magnet"
+              muted
+              loop
+              autoplay
+              src="./image/re.mp4"
+            ></video>
+          </div>
+          <div id="text-part">
+            <h1>
+              <div id="highfen"></div>
+              Projects
+            </h1>
+            <video
+              class="magnet"
+              muted
+              loop
+              autoplay
+              src="./image/re.mp4"
+            ></video>
+          </div>
+          <div id="text-part">
+            <h1>
+              <div id="highfen"></div>
+              New Day
+            </h1>
+            <video
+              class="magnet"
+              muted
+              loop
+              autoplay
+              src="./image/re.mp4"
+            ></video>
+          </div>
+          <div id="text-part">
+            <h1>
+              <div id="highfen"></div>
+              New Day
+            </h1>
+            <video
+              id="videoAnimation"
+              class="magnet"
+              muted
+              loop
+              autoplay
+              src="./image/re.mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+
+      <!--! ===== PROJECTS ==== -->
+      <div id="fimages" class="fimages">
+        <div id="fleft">
+          <div id="flemem">
+            <h3>Apple Music</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,
+              vero fuga? Magni illum molestiae modi hic rem voluptatum culpa
+              aliquid.
+            </p>
+            <div class="code-links">
+              <a href="">Code</a>
+              <a href="">Live Demo</a>
+            </div>
+          </div>
+          <div id="flemem">
+            <h3>Music</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,
+              vero fuga? Magni illum molestiae modi hic rem voluptatum culpa
+              aliquid.
+            </p>
+            <div class="code-links">
+              <a href="">Code</a>
+              <a href="">Live Demo</a>
+            </div>
+          </div>
+          <div id="flemem">
+            <h3>Apple Music</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,
+              vero fuga? Magni illum molestiae modi hic rem voluptatum culpa
+              aliquid.
+            </p>
+            <div class="code-links">
+              <a href="">Code</a>
+              <a href="">Live Demo</a>
+            </div>
+          </div>
+          <div id="flemem" class="last">
+            <h3>Apple Music</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,
+              vero fuga? Magni illum molestiae modi hic rem voluptatum culpa
+              aliquid.
+            </p>
+            <div class="code-links">
+              <a href="">Code</a>
+              <a href="">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div id="fright">
+          <div class="fimages">
+            <img
+              src="https://cdn-www.oktopost.com/blog/wp-content/uploads/2015/12/radek-grzybowski-66457-1.jpg"
+              alt=""
+            />
+            <img
+              src="https://www.greengeeks.com/blog/wp-content/uploads/2016/11/free-images.jpg"
+              alt=""
+            />
+            <img
+              src="https://scandigital.com/cdn/shop/articles/AdobeStock_364301742_4720x.jpg?v=1626805735"
+              alt=""
+            />
+            <img
+              src="https://media.istockphoto.com/id/800344998/photo/woman-working-in-a-home-apartment-workstudio.jpg?s=612x612&w=0&k=20&c=FYYMcsaFZl66fsx5GphW_qKncTtANCrb5YEnx47dsr0="
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--! ===== SLIDER ==== -->
+
+      <div id="slider">
+        <div class="slide">
+          <div class="img">
+            <img
+              src="https://scontent.cdninstagram.com/v/t51.29350-15/366189545_1275211306457222_4164023990692190125_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=QVj-XulZR_kAX-FPQkq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBGVhaIfewsDGQzvYiozYDnBdBUmAZ3EaYFMkBDG3OMzg&oe=653B7179"
+              alt=""
+            />
+          </div>
+          <div class="tag">ipsum dolor.</div>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+            consectetur.
+          </h3>
+        </div>
+        <div class="slide">
+          <div class="img">
+            <img
+              src="https://scontent.cdninstagram.com/v/t51.29350-15/366189545_1275211306457222_4164023990692190125_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=QVj-XulZR_kAX-FPQkq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBGVhaIfewsDGQzvYiozYDnBdBUmAZ3EaYFMkBDG3OMzg&oe=653B7179"
+              alt=""
+            />
+          </div>
+          <div class="tag">Lorem, ipsum dolor.</div>
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="slide">
+          <div class="img">
+            <img
+              src="https://scontent.cdninstagram.com/v/t51.29350-15/366189545_1275211306457222_4164023990692190125_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=QVj-XulZR_kAX-FPQkq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBGVhaIfewsDGQzvYiozYDnBdBUmAZ3EaYFMkBDG3OMzg&oe=653B7179"
+              alt=""
+            />
+          </div>
+          <div class="tag">Lorem, ipsum dolor.</div>
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
       </div>
       <!--! ===== FOLLOW ME ==== -->
-      <div id="followme">
+      <!-- <div id="followme">
         <div id="folow-us"></div>
         <div id="follow">
           <div id="github2">
@@ -377,41 +596,638 @@
             </div>
           </div>
         </div>
-      </div>
+        <div id="follow">
+          <div id="github2">
+            <div class="bgCOnt">
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="stripe">
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="follow">
+          <div id="github2">
+            <div class="bgCOnt">
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="stripe">
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="follow">
+          <div id="github2">
+            <div class="bgCOnt">
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="stripe">
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="follow">
+          <div id="github2">
+            <div class="bgCOnt">
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="elem">
+                <a href="https://github.com/uttampatra21">
+                  Github
+                  <img src="./image/github1.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="stripe">
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="elem">
+              <a href="https://github.com/uttampatra21">
+                Github
+                <img src="./image/github1.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
-      <!--! ======= TEXT MARQUE ANIMITION ===== -->
-      <div id="marqueAnimition">
-        <div id="marqueinner">
-          <div id="txt-part">
-            <h1>
-              <div id="highfen"></div>
-              New Day
-            </h1>
-            <video muted loop autoplay src="./image/re.mp4"></video>
-          </div>
-          <div id="txt-part">
-            <h1>
-              <div id="highfen"></div>
-              New Idea
-            </h1>
-            <video
-              id="videoMargue"
-              muted
-              loop
-              autoplay
-              src="./image/re.mp4"
-            ></video>
-          </div>
-          <div id="txt-part">
-            <h1>
-              <div id="highfen"></div>
-              New Blasc
-            </h1>
-            <video muted loop autoplay src="./image/re.mp4"></video>
+      <!--! ===== TEXT ANIMITION ==== -->
+      <div id="text-aimition">
+        <section class="container">
+          <p class="textClass">The pixel perfect artisan 💡 think - create*</p>
+        </section>
+      </div>
+      <!--! ======= FOOTER ===== -->
+      <div id="footer">
+        <div id="footerVideo">
+          <video autoplay loop muted src="./image/arrow.mp4"></video>
+        </div>
+        <div id="footerText">
+          <h1>Have</h1>
+          <h1>an idea ?</h1>
+          <h1 class="button magnet">Tell Me</h1>
+
+          <div id="footerContect">
+            <div class="gmail magnet">dev.uttampatra@gmail.com</div>
+            <div class="phone magnet">+91 6294718722</div>
           </div>
         </div>
       </div>
-
       <!-- 
 
         ------END SECTION
@@ -420,7 +1236,6 @@
     </div>
 
     <!--! ==== SCRIPTS ==== -->
-    <!--  Gsap is needed for Basic Effects -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
@@ -428,21 +1243,14 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Scroll Trigger is needed for Scroll Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Three.js is needed for 3d Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
-    <!-- ControlKit is needed for Debug Panel -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script
       type="text/javascript"
       src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-
     <script src="scripts.js"></script>
   </body>
 </html>

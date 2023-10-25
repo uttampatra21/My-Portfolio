@@ -19,7 +19,7 @@ body {
 }
 
 /* ========== CUSTOM CSS ========== */
-*::selection{
+*::selection {
   background-color: #000;
   color: #fff;
 }
@@ -27,55 +27,163 @@ body {
   height: 100vh;
   width: 100%;
 }
-/* ========== HEADER ========== */
-/* ========== HEADER ========== */
-header {
-  padding: 2.5vw 3vw;
-}
-#nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#nav ul {
-  display: flex;
-  gap: 1rem;
-}
-#nav a {
-  color: #000;
-}
-#logo a {
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.1px;
-}
-#nav ul li {
+/* ========== HAMBURGER ========== */
+/* ========== HAMBURGER ========== */
+
+.section {
   position: relative;
+  width: 100%;
+  padding: 0 1rem;
+  color: #1f1f1f;
 }
-#nav ul li a {
-  font-size: 14px;
-  font-weight: 500;
-}
-.hamIcon {
-  width: 26px;
-  height: 2px;
-  background-color: #000;
-  transition: 0.5s;
+.section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
 }
 #hambur {
-  position: sticky;
-  top: 5px;
+  padding: 2vw;
+}
+.btnOutLine1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.btnOutLine2 {
+  border-radius: 53% 47% 43% 57% / 51% 39% 61% 49%;
+}
+/* menu styling  */
+
+.menu-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #1f1f1f;
+  z-index: -10;
+  display: flex;
+  opacity: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.menu-container > .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 35px;
+  color: #ebeae4;
+}
+.log0 h1 {
+  line-height: 95%;
+}
+
+.menu-close-section {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #919598;
+}
+.menu-close-section > .inner-menu-close {
+  display: flex;
+  width: 100%;
+  padding: 35px 0px;
+  justify-content: space-between;
+}
+.menu-close-section h1 {
+  font-size: 250px;
+  line-height: 80%;
+  color: #1f1f1f;
+  padding: 0px 30px;
+  padding-bottom: 15px;
+}
+.menu-close-section > .inner-menu-close > .circle-hover {
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0px 30px;
+  background-color: #1f1f1f;
+  border-radius: 100%;
+}
+.menu-close-section > .inner-menu-close > .circle-hover .inner-circle-hover {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #919598;
+  border-radius: 100%;
+  transition: 0.4s ease-in-out;
+}
+.inner-menu-close:hover .circle-hover .inner-circle-hover {
+  transform: scale(0);
+  transition: 0.4s ease-in-out;
+}
+
+/* menuitems section  */
+.menu-items-section {
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   flex-direction: column;
-  gap: 7px;
 }
-#hambur:hover .hamIcon:nth-child(1) {
-  rotate: 50deg;
+.menu-items-section .menu-item-section {
+  height: 23vh;
+  background-color: #ebeae4;
+  color: #1f1f1f;
 }
-#hambur:hover .hamIcon:nth-child(2) {
-  rotate: -50deg;
+.menu-item-section .inner-menu-item {
+  display: flex;
+  width: 100%;
+  padding: 35px 0px;
+  justify-content: space-between;
 }
+
+.inner-menu-item h1 {
+  font-size: 50px;
+  line-height: 80%;
+  padding: 0px 30px;
+}
+.inner-menu-item > .circle-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0px 30px;
+  background-color: #1f1f1f;
+  border-radius: 100%;
+}
+.inner-menu-item > .circle-hover .inner-circle-hover {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #ebeae4;
+  border-radius: 100%;
+  transition: 0.4s ease-in-out;
+}
+.menu-item-section:hover .circle-hover .inner-circle-hover {
+  transform: scale(0);
+  transition: 0.4s ease-in-out;
+}
+
+.menu-items-section .menu-about-section {
+  width: 30%;
+}
+
+.menu-items-section .menu-blogs-section {
+  width: 60%;
+}
+
+.menu-items-section .menu-contact-section {
+  width: 100%;
+}
+
 /* ========== HERO ========== */
 /* ========== HERO ========== */
 /* {
@@ -168,6 +276,9 @@ header {
 #heroCont {
   padding: 5vw 9vw;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .mainTitle {
   line-height: 1.2;
@@ -186,22 +297,40 @@ header {
   border-radius: 60px;
   object-fit: cover;
 }
-#profileImage {
-  width: 25%;
-  height: 100%;
+
+#circle {
+  background-image: url(./image/uttam.png);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: start;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  border-radius: 1000px;
 }
-#profileImage img {
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  object-fit: cover;
+.texty {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite;
+}
+.texty span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
+  color: #fff;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* ========== ABOUT ========== */
 /* ========== ABOUT ========== */
@@ -241,36 +370,107 @@ header {
 
 /* ========== PROJECTS ========== */
 /* ========== PROJECTS ========== */
-#projects {
+
+#fimages {
+  background: blue;
   height: 100vh;
   width: 100%;
-  padding: 2vw 10vw;
+  padding: 5vw 10vw;
+  display: flex;
+  justify-content: space-evenly;
 }
-#projects h5 {
-  color: rgb(120, 120, 247);
+#fleft {
+  overflow: hidden;
+  width: 40%;
+  height: 100%;
+}
+#flemem {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1vw;
+  padding: 1vw;
+  color: #000;
 }
 
-#projects h3 {
-  line-height: 2;
+#fright {
+  overflow: hidden;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+#fright .fimages {
+  overflow: hidden;
+  width: 85%;
+  height: 75%;
+  background-color: red;
+}
+.fimages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* ========== SLIDER ========== */
+/* ========== SLIDER ========== */
+#slider {
+  padding: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.slide {
+  width: 30%;
+}
+.slide .img {
+  width: 100%;
+  height: 270px;
+
+  overflow: hidden;
+}
+.slide .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.tag {
+  width: fit-content;
+  padding: 10px 22px;
+  background-color: #dadada;
+  border-radius: 100px;
+  margin: 20px 0;
+}
+.slide h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
 /* ========== TEXT ANIMITION ========== */
 /* ========== TEXT ANIMITION ========== */
 #text-aimition {
-  height: 100vh;
   width: 100%;
-  background-color: rebeccapurple;
 }
 .container {
   overflow: hidden;
   background: #171715;
   cursor: ew-resize;
   white-space: nowrap;
-  padding: 1vh 0;
+  padding: 0.5vh 0;
 }
 
 .textClass {
   font-family: "Canopee", sans-serif;
-  font-size: 8vw;
+  font-size: 7vw;
   position: relative;
   color: #99948d;
   display: inline-block;
@@ -283,10 +483,9 @@ header {
 /* ========== Follow ========== */
 #followme {
   background-color: #000;
-  height: 100vh;
+  color: #fff;
 }
 #folow-us {
-  /* height: 250px; */
   background-color: #fff;
 }
 #follow {
@@ -349,6 +548,7 @@ header {
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding: 30px 0;
 }
 #marqueinner {
   width: fit-content;
@@ -383,4 +583,66 @@ header {
   height: 5px;
   border: radius 10px;
   background-color: #000;
+}
+
+/* =================== MARQUE =============== */
+/* =================== MARQUE =============== */
+
+#footer {
+  background-color: red;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#footerVideo {
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+#footerVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#footerText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#footerText h1 {
+  font-size: 7vw;
+  font-weight: 300;
+}
+#footerText .button {
+  padding: 0rem 4rem;
+  border: 2px solid #fff;
+  border-radius: 150px;
+}
+#footerContect {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  padding: 5%;
+}
+.gmail,
+.phone {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 25px;
 }
